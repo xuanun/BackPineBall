@@ -69,7 +69,28 @@ return [
             'driver' => 'local',
             'root' => storage_path('app/public/banner'),
             'visibility' => 'public',
-            'url' => env('IMAGE_URL').'/storage/public/banner',
+            'url' => env('IMAGES_URL').'/storage/public/banner',
+        ],
+
+        'icon' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/icon'),
+            'visibility' => 'public',
+            'url' => env('IMAGES_URL').'/storage/public/icon',
+        ],
+
+        'news' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/news'),
+            'visibility' => 'public',
+            'url' => env('IMAGES_URL').'/storage/public/news',
+        ],
+
+        'case' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/case'),
+            'visibility' => 'public',
+            'url' => env('IMAGES_URL').'/storage/public/case',
         ],
 
     ],

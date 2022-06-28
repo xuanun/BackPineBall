@@ -38,7 +38,7 @@ class AuthToken extends Middleware
         if(isset($token)) {
             // 验证token
             $redis = Redis::connection('default');
-            $cacheKey = "flowers_user_login_".$token;
+            $cacheKey = "pine_ball_user_login_".$token;
             $cacheValue = $redis->get($cacheKey);
             if($cacheValue)
             {
